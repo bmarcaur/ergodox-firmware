@@ -46,6 +46,8 @@ bool    main_arg_was_pressed;
 bool    main_arg_any_non_trans_key_pressed;
 bool    main_arg_trans_key_pressed;
 
+uint8_t       layers_head = 0;
+
 // ----------------------------------------------------------------------------
 
 /*
@@ -183,7 +185,6 @@ struct layers {
 // ----------------------------------------------------------------------------
 
 struct layers layers[MAX_ACTIVE_LAYERS];
-uint8_t       layers_head = 0;
 uint8_t       layers_ids_in_use[MAX_ACTIVE_LAYERS] = {true};
 
 /*
